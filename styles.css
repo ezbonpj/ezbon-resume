@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f8fdf4;
     color: #333;
     line-height: 1.6;
@@ -31,6 +31,7 @@ header {
 header h1 {
     font-size: 2.5rem;
     color: #2f4f4f;
+    margin-bottom: 10px;
 }
 
 /* Navigation Menu */
@@ -40,14 +41,14 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: #2f4f4f;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 15px;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -62,17 +63,18 @@ nav ul li a.active {
 .hero {
     background-color: #eafaf1;
     color: #2f4f4f;
-    padding: 60px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
 .hero p {
     font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 /* Content Section Styling */
@@ -84,9 +86,14 @@ nav ul li a.active {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.content h2, .content h3 {
+    color: #2f4f4f;
+}
+
 /* Skill List Columns */
 .skills-list {
     columns: 2;
+    gap: 20px;
 }
 
 /* Footer */
@@ -103,19 +110,24 @@ footer {
 @media (max-width: 768px) {
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 5px 0;
     }
     
     nav ul li a {
         display: block;
         text-align: center;
+        padding: 10px;
     }
     
     .hero h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .skills-list {
         columns: 1;
+    }
+
+    .container {
+        padding: 0 10px;
     }
 }
